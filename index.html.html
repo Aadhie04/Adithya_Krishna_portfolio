@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Adithya Krishna K A</title>
+    <link rel="icon" href="https://res.cloudinary.com/djchvnobw/image/upload/v1730554354/profile-pic_2_fkattx.png" type="image" sizes="16x16">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            background-color: #000000;
+            color: #f3f3f3;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 8%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: rgb(188, 128, 245);
+            font-weight: 700;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            color: rgb(188, 128, 245);
+        }
+
+        nav a {
+            font-size: 1.8rem;
+            color: #f3f3f3;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: rgb(188, 128, 245);
+            border-bottom: 3px solid rgb(188, 128, 245);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 8rem 9%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .home {
+            background-color: #040404;
+        }
+
+        .home .home-content h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        span {
+            color: rgb(188, 128, 245);
+        }
+
+        .home-content h3 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .home-content p {
+            font-size: 1.6rem;
+            margin: 1.5rem 0 3rem;
+            max-width: 700px;
+        }
+
+        .home-img img {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: transparent;
+            border: 0.2rem solid rgb(188, 128, 245);
+            font-size: 2rem;
+            border-radius: 50%;
+            margin: 1.5rem 1.5rem 0;
+            transition: 0.3s;
+            color: rgb(188, 128, 245);
+        }
+
+        .social-icons a:hover {
+            color: #282c34;
+            background-color: rgb(188, 128, 245);
+            transform: scale(1.1) translateY(-3px);
+            /* scroll-behavior: smooth; */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background-color: rgb(188, 128, 245);
+            color: #282c34;
+            border-radius: 3rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            transition: 0.3s;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: rgb(188, 128, 245);
+        }
+
+        .services,
+        .skills,
+        .education,
+        .experience,
+        .contact {
+            padding: 5rem 9%;
+        }
+
+        .section-title {
+            font-size: 4rem;
+            color: rgb(188, 128, 245);
+            margin-bottom: 3rem;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            gap: 5rem;
+            flex-wrap: wrap;
+        }
+
+        .service-box,
+        .skill-box,
+        .education-box,
+        .experience-box {
+            background-color: #212020;
+            padding: 3rem;
+            border-radius: 1rem;
+            transition: 0.3s;
+        }
+
+        .service-box:hover,
+        .skill-box:hover,
+        .education-box:hover,
+        .experience-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box h4,
+        .skill-box h4,
+        .education-box h4,
+        .experience-box h4 {
+            font-size: 2.2rem;
+            color: rgb(188, 128, 245);
+            margin-bottom: 1rem;
+        }
+
+        .service-box p,
+        .skill-box p,
+        .education-box p,
+        .experience-box p {
+            font-size: 1.5rem;
+            color: #f3f3f3;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: rgb(188, 128, 245)0;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            height: 4px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 828px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 15px;
+                border-bottom: 1px solid #444;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            #menu-toggle:checked+.hamburger+nav {
+                display: flex;
+            }
+        }
+        .typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.contact-box{
+    color: rgb(188, 128, 245);
+    font-size: 18px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: rgb(188, 128, 245);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid rgb(188, 128, 245);
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Cloud Engineer";
+    }
+    21%, 40%{
+        content: "Web Developer";
+    }
+    41%, 60%{
+        content: "Frontend Developer";
+        /* font-size: medium; */
+    }
+    61%, 80%{
+        content: "Python Developer";
+    }
+    81%, 100%{
+        content: "PCB Designer";
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Adithya Krishna K A</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="https://res.cloudinary.com/djchvnobw/image/upload/v1730554354/profile-pic_2_fkattx.png" alt="profile pic">
+        </div>
+        <div class="home-content">
+            <h1>Hey there!, it's me <span>Adithya</span></h1>
+            <div class="keywords"><h3 class="typing-text">I'm a <span></span></h3></div>
+            <p>
+                A versatile technology professional with a passion for developing innovative solutions. I specialize in cloud technologies, web development, and modern software engineering. With experience in creating dynamic web applications and managing cloud infrastructure, I bring a blend of creativity and technical skill to every project.
+                Proficient in managing cloud infrastructure on platforms like AWS and Azure. I specialize in deploying, monitoring, and optimizing cloud resources to ensure scalability and reliability.Skilled in building responsive websites using HTML5, CSS3, JavaScript, and modern frameworks
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/adithya-krishna-k-a-08106b190/"><i class="fa fa-linkedin-square"></i></a> <!-- LinkedIn Button -->
+                <a href="https://github.com/Aadhie04"><i class="fa fa-github"></i></a>
+                <a href="mailto:ka.adithyakrishna2001@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://wa.me//7994225139"><i class="fa fa-whatsapp"></i></a>
+                
+            </div>
+            <a href="https://wa.me//7994225139" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="services" id="services">
+        <h2 class="section-title"style="color: #c8edee;">PROJECTS</h2>
+        <div class="section-content">
+            <div class="service-box">
+                <h4>SMART GYM: Implementing Machine Learning For More Efficient Workout Experience </h4>
+                <p>Introduced an application that detects the user’s exercise pose and provides personalized, detailed recommendations on how the user can improve their form and reduce the cost of a fitness trainer and make it accessible to everyone from anywhere and at any time..
+                </p>
+            </div>
+            <!-- <div class="service-box">
+                <h4>SOLAR TRACKER</h4>
+                <p>A microcontroller-based solar tracking system that can be implemented using the allocated time and resources to track the sun's relative motion in the sky during daylight and save the much-needed power.
+                </p>
+            </div> -->
+            <div class="service-box">
+                <h4>Cloned Website Using HTML, CSS and JavaScript.</h4>
+                <p>Cloned websites including Zomato, Tesla, Uber, Netflix, and SpaceX, showcasing responsive design and interactivity, and hosted them on EC2 instances using shell scripting, S3, Amplify, Netlify, FileZilla, and GitHub Pages, along with hosting a React app on these platforms.</p>
+            </div>
+            <div class="service-box">
+                <h4>Python Projects.</h4>
+                <p># Gesture-Based Volume Control Using Python, OpenCV, and MediaPipe. <br> # Image to Pencil Sketch Conversion with Python and OpenCV.</p>
+            </div>
+            <div class="service-box">
+                <h4>Game On! Python-Powered Games Collection</h4>
+                <p># Python Dice Game: A Fun Take on 7 Up 7 Down. <br> # Climb the Ladder or Face the Snake: Python's Snake and Ladder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title"style="color: #c8edee;">SKILLS</h2>
+        <div class="section-content">
+            <div class="skill-box">
+                <h4>Technical Skills</h4>
+                <p>AWS, S3, EC2, RDS, Lambda, IAM, Amplify, Netlify, LoadBalancer, Jenkins, Blue Ocean, Git, Github, Docker, Python, HTML, CSS, JavaScript, Linux, Shell scripting.</p>
+            </div>
+            <div class="skill-box">
+                <h4>Soft Skills</h4>
+                <p>Leadership, Strategic thinking, Decision-making, Project management, resilience,cross-functional collaboration
+                </p>
+            </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2 class="section-title" style="color: #c8edee;">EDUCATION</h2>
+        <div class="section-content">
+            <div class="education-box">
+                <h4>Bachelor of Technology</h4>
+                <p>Electronics and Communication Engineering, <br> Adi Shankara Institute of Engineering and Technology, Kalady <br>APJ Abdul Kalam Technological University (KTU) <br>(2019-23) CGPA: 6.89</p>
+            </div>
+            <div class="education-box">
+                <h4>Higher Secondary (12th Grade)</h4>
+                <p>Mar Augustine Higher Secondary School, Thuravoor,<br> Higher Secondary Education (HSE) <br>(2017-19) CGPA: 8.2</p>
+            </div>
+            <div class="education-box">
+                <h4>High School (10th Grade)</h4>
+                <p>Sacred Heart English Medium School, Mookkannoor,<br>Central Board of Secondary Education (CBSE) <br>(2017) CGPA: 9.0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="section-title" style="color:#c8edee;">EXPERIENCE</h2>
+        <div class="section-content">
+            <div class="experience-box">
+                <h4>Aspiring Professional</h4>
+                <p>While I am currently building my professional experience, I bring hands-on knowledge in developing web applications and cloud-based solutions. My projects, including recreations of well-known websites like Zomato, Tesla, Uber, and Netflix, demonstrate my commitment to quality design and functionality. As a proactive learner, I’ve become proficient in Python, HTML, CSS, JavaScript, and AWS cloud services, which I've applied to various personal projects.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title" style="color:#c8edee;">CONTACTS</h2>
+        <div class="section-content">
+            <div class="contact-box">
+                <h4>Email</h4>
+                <p><a href="mailto:ka.adithyakrishna2001@gmail.com"style="color: rgb(188, 128, 245)">ka.adithyakrishna2001@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <h4>Phone</h4>
+                <p><a href="tel:+917994225139" style="color: rgb(188, 128, 245)">+91-7994225139</a></p>
+            </div>
+            <div class="contact-box">
+                <h4>Location</h4>
+                <p>Electronic city, Bangaluru, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to Handle Active Link -->
+    <script>
+        // Select all navigation links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Function to update the active link
+        function updateActiveLink() {
+            let currentSection = '';
+            // Loop through each section to find the current one in view
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            // Update the active class on nav links based on current section
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSection)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Listen for scroll events to trigger the update
+        window.addEventListener('scroll', updateActiveLink);
+    </script>
+
+</body>
+
+</html>
